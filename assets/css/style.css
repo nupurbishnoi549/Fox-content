@@ -35,10 +35,10 @@
     justify-content: center;
 }
 .w-100{
-    width: 100;
+    width: 100%;
 }
-.min-vh-100{
-    height: 100vh;
+.min-vh-100 {
+    min-height: 100vh;
 }
 .heading-1{
     font-family: 'DM Sans' , sans-serif;
@@ -100,4 +100,34 @@ border: 2px solid #4E3BA3
 }
 .im-max7{
     max-width: 171px;
+}
+@media (max-width: 1200px) {
+    .col-3 {
+        width: 33.3333%;
+    }
+    .py-20{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .col-3 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-3 {
+        width: 100%;
+    }
+}
+
+.card {
+    padding: 40px 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
